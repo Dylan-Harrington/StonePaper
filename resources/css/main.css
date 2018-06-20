@@ -1,0 +1,205 @@
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+header {
+  /* border: 1px solid magenta; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+
+header.hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 5px 75px black; /* offset-x | offset-y | blur-radius | color */
+}
+
+header.scrolling {
+  height: 5rem;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 5px 75px black; /* offset-x | offset-y | blur-radius | color */
+}
+
+header .container {
+  /* border: 1px solid gold; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+}
+
+header .container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+}
+
+header .container h2 span {
+  font-weight: 700;
+}
+
+header .container nav {
+  /* border: 1px solid magenta; */
+  margin-left: auto;
+}
+
+header .container nav ul li {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+#jumbotron {
+  /* border: 1px solid chartreuse; */
+  background-image: url(../images/cypress-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#jumbotron h1 {
+  font-size: 4rem;
+  font-family: 'Playfair Display', serif;
+  /* transform: rotate(-6deg); */
+}
+
+#jumbotron .button_box {
+  /* border: 1px solid red; */
+  display: flex;
+  /* margin: 9rem 0 5rem 0; */
+  position: absolute;
+  bottom: 4rem;
+}
+
+#jumbotron .button_box a {
+  margin: 0 2rem;
+  /* border: 1px solid magenta; */
+}
+
+#jumbotron .button_box a button {
+  padding: 1rem 0;
+  width: 14rem;
+  border: 2px solid white;
+  /* border-radius: 2rem; */
+  text-align: center;
+  box-shadow: 0px 5px 75px black;
+  /* font-weight: 600; */
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out, border-radius 600ms ease-in-out;
+}
+
+#jumbotron .button_box a button.hover {
+  background-color: white;
+  color: black;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+
+#jumbotron .button_box a.primary_button button {
+  background-color: white;
+  color: black;
+}
+
+
+#jumbotron .button_box a.secondary_button button {
+  /* background-color: hsla(360, 100%, 100%, 0.4); */
+}
+
+
+
+
+
+
+
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+
+main .benefit_row {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+}
+
+main .benefit_row .benefit_box {
+  width: 25%;
+  /* border: 1px solid magenta; */
+  padding-top: 25%;
+  position: relative;
+  background-size: cover;
+}
+
+main .benefit_row .benefit_box_one {
+  background-color: hsla(0, 0%, 12%, 1);
+  background-image: url(../images/recycle.jpg);
+}
+
+main .benefit_row .benefit_box_two {
+  background-color: hsla(55, 94%, 34%, 1);
+  background-image: url(../images/water-1.jpg);
+}
+
+main .benefit_row .benefit_box_three {
+  background-color: hsla(56, 95%, 43%, 1);
+  background-image: url(../images/sunlight-2.jpg);
+
+}
+
+main .benefit_row .benefit_box_four {
+  background-color: hsla(55, 94%, 34%, 1);
+  background-image: url(../images/clouds.jpg);
+}
+
+
+
+main .benefit_row .benefit_box .text_container {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+}
+
+main .benefit_row .benefit_box .text_container h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  line-height: 1.5;
+  text-align: center;
+  /* border: 1px solid magenta; */
+}
+
+main .benefit_row .benefit_box .text_container p {
+  padding: 0 1rem;
+  line-height: 1.5;
+}
